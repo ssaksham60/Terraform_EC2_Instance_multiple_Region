@@ -1,0 +1,19 @@
+For multiple region 
+we have to create a alias so we can assign the Ec2 while creating 
+eg-
+provider "aws" {
+ alias      = "ap-south-1"
+  region     = "ap-south-1"
+and 
+ alias      = "ap-northeast-3"
+  region     = "ap-northeast-3"
+
+
+
+and also we add secret key for them
+eg 
+provider "aws" {
+ alias      = "ap-south-1"
+  region     = "ap-south-1"
+  access_key = "AKIAWELPQ*****6NADSO"
+  secret_key = "pJ****************HLp"
